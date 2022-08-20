@@ -1,4 +1,3 @@
-const { readFileSync } = require("fs");
 userinput=require("readline-sync");
 axioss=require("axios");
 fs=require("fs");
