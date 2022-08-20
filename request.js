@@ -7,7 +7,7 @@ url=axioss.get("https://api.merakilearn.org/courses")
 .then(res=>{
     link=res.data
     fs.writeFileSync("course.json",JSON.stringify(link,null,4))
-    read=readFileSync("course.json");
+    read=fs.readFileSync("course.json");
     read=JSON.parse(read)
     serialNumber=1
     for(i of read){
